@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    
+    
+<head>
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P27B3SF7PC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P27B3SF7PC');
+</script>    
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>niggu</title>
+  <link rel="shortcut icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"> 
+</head>
+
+    
+<body>
+    
+    <div class="snslink">
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-twitter"></i>
+           <a href="https://twitter.com/niggu_kokuyou" target="_blank"><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-youtube"></i>
+           <a href="https://www.youtube.com/@niggurath_kokuyou" target="_blank"><i class="fab fa-youtube fa-stack-1x"></i></a>
+        </span> 
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <a href="https://nao153944.github.io/kaguya/"><img src="kaguya.png" width="65" height="65"></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <a href="https://nao153944.github.io/mila/"><img src="mila.png" width="65" height="65"></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <a href="https://nao153944.github.io/fubu/"><img src="fubu.png" width="65" height="65"></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <a href="https://nao153944.github.io/yomi/"><img src="yomi.png" width="65" height="65"></a>
+        </span>
+         
+        <span class="fa-stack fa-2x fa-lg">
+           <a href="https://nao153944.github.io/nyaru/"><img src="nyaru.png" width="65" height="65"></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <a href="https://nao153944.github.io/pasta/"><img src="pasta.png" width="65" height="65"></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-trash"></i>
+           <i class="far fa-trash-alt fa-stack-1x fa-inverse" onclick="ConfirmAlert()"></i>
+        </span> 
+        
+        <span class="fa-stack fa-2x fa-lg" onclick="scrolltop()">
+           <i class="fa fa-circle fa-stack-2x circle-up"></i>
+           <i class="fas fas fa-chevron-up fa-stack-1x fa-inverse"></i>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg" onclick="scrollunder()">
+           <i class="fa fa-circle fa-stack-2x circle-up"></i>
+           <i class="fas fas fa-chevron-down fa-stack-1x fa-inverse"></i>
+        </span>
+        
+    </div>
+    
+    
+    <div class ="favorite">
+       <input type="checkbox" class="favorite-checkbox" id="favorite" onclick="FavoriteCheck()" >
+       <label class="c-text-favorite" for="favorite-checkbox">お気に入り</label>
+    </div>
+    
+    
+    <div class="form">
+      <input type="search" inputmode="search" class="select4" id="select4" placeholder="曲名を入力" onchange="SelectCheck()">
+    </div>
+    
+    
+    <div class ="select">
+       <label class="c-text-select">歌手名</label>
+       <select id="select3" class="select3" onchange="SelectCheck()">
+          <option value="none">選択なし</option>
+                  <option value="安次嶺希和子">安次嶺希和子</option>
+                  <option value="阿部真央">阿部真央</option>
+                  <option value="ALI PROJECT">ALI PROJECT</option>
+                  <option value="諫山実生">諫山実生</option>
+                  <option value="後ろから這いより隊G">後ろから這いより隊G</option>
+                  <option value="かいりきベア">かいりきベア</option>
+                  <option value="Kanaria">Kanaria</option>
+                  <option value="King Gnu">King Gnu</option>
+                  <option value="しぐれうい">しぐれうい</option>
+                  <option value="すりぃ">すりぃ</option>
+                  <option value="想太">想太</option>
+                  <option value="ちゃんみな">ちゃんみな</option>
+                  <option value="ツミキ">ツミキ</option>
+                  <option value="DECO*27">DECO*27</option>
+                  <option value="なきそ">なきそ</option>
+                  <option value="ぬゆり">ぬゆり</option>
+                  <option value="ハチ">ハチ</option>
+                  <option value="八王子P × Giga">八王子P × Giga</option>
+                  <option value="原口沙輔">原口沙輔</option>
+                  <option value="柊キライ">柊キライ</option>
+                  <option value="柊マグネタイト">柊マグネタイト</option>
+                  <option value="ふじを">ふじを</option>
+                  <option value="みきとP">みきとP</option>
+                  <option value="Mrs. GREEN APPLE">Mrs. GREEN APPLE</option>
+                  <option value="YOASOBI">YOASOBI</option>
+                  <option value="ヨルシカ">ヨルシカ</option>
+                  <option value="40mP">40mP</option>
+                  <option value="理芽">理芽</option>
+                  <option value="ReoNa">ReoNa</option>
+                  <option value="和ぬか">和ぬか</option>
+                <optgroup label=""></optgroup>
+       </select>
+  
+
+       <label class="c-text-select">配信日</label>
+       <select id="select1" class="select1" onchange="SelectCheck()">
+          <option value="none">選択なし</option>
+                  <option value="2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short">2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short</option>
+                  <option value="2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】">2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</option>
+                  <option value="2023/08/27【歌枠】#チームエビルゴッド歌枠リレー 🎤✨洗脳！崇拝！平伏！邪神の歌声でSAN値削っちゃいます♡【黒羊ニグラス / エアプロ / 新人Vtuber / KARAOKE】">2023/08/27【歌枠】#チームエビルゴッド歌枠リレー 🎤✨洗脳！崇拝！平伏！邪神の歌声でSAN値削っちゃいます♡【黒羊ニグラス / エアプロ / 新人Vtuber / KARAOKE】</option>
+                  <option value="2023/08/11【歌枠】＃エアプロ歌枠リレー🎐夏の宵、君の隣で過ごしたい🎐【黒羊ニグラス / エアプロ / 新人Vtuber】">2023/08/11【歌枠】＃エアプロ歌枠リレー🎐夏の宵、君の隣で過ごしたい🎐【黒羊ニグラス / エアプロ / 新人Vtuber】</option>
+                  <option value="2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】">2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】</option>
+                <optgroup label=""></optgroup>
+       </select>
+    </div>
+
+    <div class ="radio">
+       <input class="r-button" type="radio" name="q1" value="デフォルト" onclick="RadioCheck()" checked>
+          <label class="r-text">デフォルト</label>
+       <input class="r-button" type="radio" name="q1" value="配信順" onclick="RadioCheck()">
+          <label class="r-text">配信順</label>
+       <input class="r-button" type="radio" name="q1" value="歌唱回数順" onclick="RadioCheck()">
+          <label class="r-text">歌唱回数順</label>
+    </div>
+
+
+<div class ="content" id="content">
+
+              <div id="c-1-1" class="1">
+           <input type="checkbox" class="checkbox" id="1-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-1-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=WEiYUG42P1s\x26t=1022s')">
+              <c-text-title id="al-c-1-1" class="柊キライ">ラブカ？</c-text-title><br>
+              <c-text-youtube>2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-2-1" class="2">
+           <input type="checkbox" class="checkbox" id="2-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-2-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=WEiYUG42P1s\x26t=1215s')">
+              <c-text-title id="al-c-2-1" class="みきとP">少女レイ</c-text-title><br>
+              <c-text-youtube>2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-2-2" class="2">
+           <input type="checkbox" class="checkbox" id="2-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-2-2'); OpenWindow('https:\/\/www.youtube.com\/watch?v=2foouDb9htQ\x26t=1701s')">
+              <c-text-title id="al-c-2-2" class="みきとP">少女レイ</c-text-title><br>
+              <c-text-youtube>2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-3-1" class="3">
+           <input type="checkbox" class="checkbox" id="3-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-3-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=WEiYUG42P1s\x26t=1946s')">
+              <c-text-title id="al-c-3-1" class="ReoNa">ないない</c-text-title><br>
+              <c-text-youtube>2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-4-1" class="4">
+           <input type="checkbox" class="checkbox" id="4-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-4-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=WEiYUG42P1s\x26t=2488s')">
+              <c-text-title id="al-c-4-1" class="八王子P × Giga">Gimme×Gimme</c-text-title><br>
+              <c-text-youtube>2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-4-2" class="4">
+           <input type="checkbox" class="checkbox" id="4-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-4-2'); OpenWindow('https:\/\/www.youtube.com\/watch?v=92kd258z4wc\x26t=2913s')">
+              <c-text-title id="al-c-4-2" class="八王子P × Giga">Gimme×Gimme</c-text-title><br>
+              <c-text-youtube>2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-4-3" class="4">
+           <input type="checkbox" class="checkbox" id="4-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-4-3'); OpenWindow('https:\/\/www.youtube.com\/watch?v=2foouDb9htQ\x26t=1037s')">
+              <c-text-title id="al-c-4-3" class="八王子P × Giga">Gimme×Gimme</c-text-title><br>
+              <c-text-youtube>2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-5-1" class="5">
+           <input type="checkbox" class="checkbox" id="5-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-5-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=WEiYUG42P1s\x26t=3011s')">
+              <c-text-title id="al-c-5-1" class="柊マグネタイト">撫でんな</c-text-title><br>
+              <c-text-youtube>2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-6-1" class="6">
+           <input type="checkbox" class="checkbox" id="6-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-6-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=WEiYUG42P1s\x26t=3793s')">
+              <c-text-title id="al-c-6-1" class="すりぃ">ラヴィ</c-text-title><br>
+              <c-text-youtube>2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-7-1" class="7">
+           <input type="checkbox" class="checkbox" id="7-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-7-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=WEiYUG42P1s\x26t=4933s')">
+              <c-text-title id="al-c-7-1" class="YOASOBI">アイドル</c-text-title><br>
+              <c-text-youtube>2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-7-2" class="7">
+           <input type="checkbox" class="checkbox" id="7-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-7-2'); OpenWindow('https:\/\/www.youtube.com\/watch?v=92kd258z4wc\x26t=4856s')">
+              <c-text-title id="al-c-7-2" class="YOASOBI">アイドル</c-text-title><br>
+              <c-text-youtube>2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-8-1" class="8">
+           <input type="checkbox" class="checkbox" id="8-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-8-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=WEiYUG42P1s\x26t=5666s')">
+              <c-text-title id="al-c-8-1" class="ぬゆり">フィクサー</c-text-title><br>
+              <c-text-youtube>2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-8-2" class="8">
+           <input type="checkbox" class="checkbox" id="8-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-8-2'); OpenWindow('https:\/\/www.youtube.com\/watch?v=2foouDb9htQ\x26t=2333s')">
+              <c-text-title id="al-c-8-2" class="ぬゆり">フィクサー</c-text-title><br>
+              <c-text-youtube>2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-9-1" class="9">
+           <input type="checkbox" class="checkbox" id="9-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-9-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=WEiYUG42P1s\x26t=6840s')">
+              <c-text-title id="al-c-9-1" class="ふじを">我儘姫</c-text-title><br>
+              <c-text-youtube>2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-10-1" class="10">
+           <input type="checkbox" class="checkbox" id="10-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-10-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=WEiYUG42P1s\x26t=7508s')">
+              <c-text-title id="al-c-10-1" class="後ろから這いより隊G">恋は渾沌の隷也</c-text-title><br>
+              <c-text-youtube>2023/06/11【デビュー1ヶ月記念 / 歌枠】3000人耐久！初めての歌枠♪初見さん大歓迎✨記念すべき今日という日を君と過ごしたい💖【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-11-1" class="11">
+           <input type="checkbox" class="checkbox" id="11-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-11-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=dZg-N4e7uU4\x26t=204s')">
+              <c-text-title id="al-c-11-1" class="Kanaria">QUEEN</c-text-title><br>
+              <c-text-youtube>2023/08/11【歌枠】＃エアプロ歌枠リレー🎐夏の宵、君の隣で過ごしたい🎐【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-12-1" class="12">
+           <input type="checkbox" class="checkbox" id="12-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-12-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=dZg-N4e7uU4\x26t=515s')">
+              <c-text-title id="al-c-12-1" class="和ぬか">寄り酔い</c-text-title><br>
+              <c-text-youtube>2023/08/11【歌枠】＃エアプロ歌枠リレー🎐夏の宵、君の隣で過ごしたい🎐【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-13-1" class="13">
+           <input type="checkbox" class="checkbox" id="13-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-13-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=dZg-N4e7uU4\x26t=1047s')">
+              <c-text-title id="al-c-13-1" class="40mP">恋愛裁判</c-text-title><br>
+              <c-text-youtube>2023/08/11【歌枠】＃エアプロ歌枠リレー🎐夏の宵、君の隣で過ごしたい🎐【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-14-1" class="14">
+           <input type="checkbox" class="checkbox" id="14-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-14-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=dZg-N4e7uU4\x26t=1440s')">
+              <c-text-title id="al-c-14-1" class="想太">いかないで</c-text-title><br>
+              <c-text-youtube>2023/08/11【歌枠】＃エアプロ歌枠リレー🎐夏の宵、君の隣で過ごしたい🎐【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-15-1" class="15">
+           <input type="checkbox" class="checkbox" id="15-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-15-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=dZg-N4e7uU4\x26t=1744s')">
+              <c-text-title id="al-c-15-1" class="ツミキ">フォニイ</c-text-title><br>
+              <c-text-youtube>2023/08/11【歌枠】＃エアプロ歌枠リレー🎐夏の宵、君の隣で過ごしたい🎐【黒羊ニグラス / エアプロ / 新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-15-2" class="15">
+           <input type="checkbox" class="checkbox" id="15-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-15-2'); OpenWindow('https:\/\/www.youtube.com\/watch?v=92kd258z4wc\x26t=4008s')">
+              <c-text-title id="al-c-15-2" class="ツミキ">フォニイ</c-text-title><br>
+              <c-text-youtube>2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-16-1" class="16">
+           <input type="checkbox" class="checkbox" id="16-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-16-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=sOQs27lItgE\x26t=112s')">
+              <c-text-title id="al-c-16-1" class="King Gnu">一途</c-text-title><br>
+              <c-text-youtube>2023/08/27【歌枠】#チームエビルゴッド歌枠リレー 🎤✨洗脳！崇拝！平伏！邪神の歌声でSAN値削っちゃいます♡【黒羊ニグラス / エアプロ / 新人Vtuber / KARAOKE】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-17-1" class="17">
+           <input type="checkbox" class="checkbox" id="17-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-17-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=sOQs27lItgE\x26t=635s')">
+              <c-text-title id="al-c-17-1" class="諫山実生">月のワルツ</c-text-title><br>
+              <c-text-youtube>2023/08/27【歌枠】#チームエビルゴッド歌枠リレー 🎤✨洗脳！崇拝！平伏！邪神の歌声でSAN値削っちゃいます♡【黒羊ニグラス / エアプロ / 新人Vtuber / KARAOKE】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-18-1" class="18">
+           <input type="checkbox" class="checkbox" id="18-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-18-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=sOQs27lItgE\x26t=1162s')">
+              <c-text-title id="al-c-18-1" class="ALI PROJECT">聖少女領域</c-text-title><br>
+              <c-text-youtube>2023/08/27【歌枠】#チームエビルゴッド歌枠リレー 🎤✨洗脳！崇拝！平伏！邪神の歌声でSAN値削っちゃいます♡【黒羊ニグラス / エアプロ / 新人Vtuber / KARAOKE】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-19-1" class="19">
+           <input type="checkbox" class="checkbox" id="19-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-19-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=sOQs27lItgE\x26t=1657s')">
+              <c-text-title id="al-c-19-1" class="安次嶺希和子">忘れじの言の葉</c-text-title><br>
+              <c-text-youtube>2023/08/27【歌枠】#チームエビルゴッド歌枠リレー 🎤✨洗脳！崇拝！平伏！邪神の歌声でSAN値削っちゃいます♡【黒羊ニグラス / エアプロ / 新人Vtuber / KARAOKE】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-19-2" class="19">
+           <input type="checkbox" class="checkbox" id="19-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-19-2'); OpenWindow('https:\/\/www.youtube.com\/watch?v=2foouDb9htQ\x26t=8479s')">
+              <c-text-title id="al-c-19-2" class="安次嶺希和子">忘れじの言の葉</c-text-title><br>
+              <c-text-youtube>2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-20-1" class="20">
+           <input type="checkbox" class="checkbox" id="20-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-20-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=92kd258z4wc\x26t=388s')">
+              <c-text-title id="al-c-20-1" class="理芽">食虫植物</c-text-title><br>
+              <c-text-youtube>2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-21-1" class="21">
+           <input type="checkbox" class="checkbox" id="21-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-21-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=92kd258z4wc\x26t=745s')">
+              <c-text-title id="al-c-21-1" class="なきそ">お呪い</c-text-title><br>
+              <c-text-youtube>2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-22-1" class="22">
+           <input type="checkbox" class="checkbox" id="22-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-22-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=92kd258z4wc\x26t=1096s')">
+              <c-text-title id="al-c-22-1" class="DECO*27">妄想感傷代償連盟</c-text-title><br>
+              <c-text-youtube>2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-22-2" class="22">
+           <input type="checkbox" class="checkbox" id="22-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-22-2'); OpenWindow('https:\/\/www.youtube.com\/watch?v=2foouDb9htQ\x26t=7864s')">
+              <c-text-title id="al-c-22-2" class="DECO*27">妄想感傷代償連盟</c-text-title><br>
+              <c-text-youtube>2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-23-1" class="23">
+           <input type="checkbox" class="checkbox" id="23-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-23-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=92kd258z4wc\x26t=1562s')">
+              <c-text-title id="al-c-23-1" class="ちゃんみな">ハレンチ</c-text-title><br>
+              <c-text-youtube>2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-24-1" class="24">
+           <input type="checkbox" class="checkbox" id="24-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-24-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=92kd258z4wc\x26t=1989s')">
+              <c-text-title id="al-c-24-1" class="ちゃんみな">ボイスメモ No. 5</c-text-title><br>
+              <c-text-youtube>2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-25-1" class="25">
+           <input type="checkbox" class="checkbox" id="25-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-25-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=92kd258z4wc\x26t=2398s')">
+              <c-text-title id="al-c-25-1" class="40mP">からくりピエロ</c-text-title><br>
+              <c-text-youtube>2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-26-1" class="26">
+           <input type="checkbox" class="checkbox" id="26-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-26-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=92kd258z4wc\x26t=3526s')">
+              <c-text-title id="al-c-26-1" class="ハチ">Mrs.Pumpkinの滑稽な夢</c-text-title><br>
+              <c-text-youtube>2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-27-1" class="27">
+           <input type="checkbox" class="checkbox" id="27-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-27-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=92kd258z4wc\x26t=4478s')">
+              <c-text-title id="al-c-27-1" class="かいりきベア">失敗作少女</c-text-title><br>
+              <c-text-youtube>2023/09/26【歌枠 / KARAOKE】初見さん大歓迎✨1ヶ月ぶりの歌枠ってマ…？です～はわわ😖💦【黒羊ニグラス / エアプロ / 新人Vtube r/ Singing stream】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-28-1" class="28">
+           <input type="checkbox" class="checkbox" id="28-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-28-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=2foouDb9htQ\x26t=3150s')">
+              <c-text-title id="al-c-28-1" class="しぐれうい">粛聖!! ロリ神レクイエム☆</c-text-title><br>
+              <c-text-youtube>2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-29-1" class="29">
+           <input type="checkbox" class="checkbox" id="29-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-29-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=2foouDb9htQ\x26t=3809s')">
+              <c-text-title id="al-c-29-1" class="ヨルシカ">ただ君に晴れ</c-text-title><br>
+              <c-text-youtube>2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-30-1" class="30">
+           <input type="checkbox" class="checkbox" id="30-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-30-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=2foouDb9htQ\x26t=4689s')">
+              <c-text-title id="al-c-30-1" class="原口沙輔">人マニア</c-text-title><br>
+              <c-text-youtube>2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-31-1" class="31">
+           <input type="checkbox" class="checkbox" id="31-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-31-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=2foouDb9htQ\x26t=5228s')">
+              <c-text-title id="al-c-31-1" class="Mrs. GREEN APPLE">点描の唄 </c-text-title><br>
+              <c-text-youtube>2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-32-1" class="32">
+           <input type="checkbox" class="checkbox" id="32-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'nigguc-32-1'); OpenWindow('https:\/\/www.youtube.com\/watch?v=2foouDb9htQ\x26t=7343s')">
+              <c-text-title id="al-c-32-1" class="阿部真央">貴方の恋人になりたいのです</c-text-title><br>
+              <c-text-youtube>2023/12/20【歌枠 / KARAOKE】久しぶりのお歌♪一緒に盛り上がりましょう🎤✨ #shorts #short</c-text-youtube>
+           </button>
+        </div>
+
+      
+
+    </div>
+
+   <script type="text/javascript">
+       
+       
+var list = new Array(
+"1-1",
+"2-1",
+"2-2",
+"3-1",
+"4-1",
+"4-2",
+"4-3",
+"5-1",
+"6-1",
+"7-1",
+"7-2",
+"8-1",
+"8-2",
+"9-1",
+"10-1",
+"11-1",
+"12-1",
+"13-1",
+"14-1",
+"15-1",
+"15-2",
+"16-1",
+"17-1",
+"18-1",
+"19-1",
+"19-2",
+"20-1",
+"21-1",
+"22-1",
+"22-2",
+"23-1",
+"24-1",
+"25-1",
+"26-1",
+"27-1",
+"28-1",
+"29-1",
+"30-1",
+"31-1",
+"32-1",
+);
+
+
+
+
+
+var rh = new Array(
+"1-1",
+"2-1",
+"3-1",
+"4-1",
+"5-1",
+"6-1",
+"7-1",
+"8-1",
+"9-1",
+"10-1",
+"11-1",
+"12-1",
+"13-1",
+"14-1",
+"15-1",
+"16-1",
+"17-1",
+"18-1",
+"19-1",
+"20-1",
+"21-1",
+"22-1",
+"23-1",
+"24-1",
+"25-1",
+"4-2",
+"26-1",
+"15-2",
+"27-1",
+"7-2",
+"4-3",
+"2-2",
+"8-2",
+"28-1",
+"29-1",
+"30-1",
+"31-1",
+"32-1",
+"22-2",
+"19-2",
+);
+       
+       
+      var loadcontent;
+      var loadcheckbox;
+      var loadlist;
+       
+      window.onload = firstscript();
+      
+       
+       
+      function firstscript(){
+         var i=0;
+         while( i<list.length ){
+            loadlist = JSON.parse(localStorage.getItem('niggusave'+list[i]));
+            if(loadlist == "true"){
+               loadcheckbox = document.getElementById(list[i]);
+               loadcheckbox.checked = true;
+            }
+            i++;
+         }
+          
+         loadlist = JSON.parse(localStorage.getItem('niggusavefavorite'));
+         if(loadlist == "true"){
+            loadcheckbox = document.getElementById('favorite');
+            loadcheckbox.checked = true;
+            FavoriteOn();
+         }
+          
+         loadlist = JSON.parse(localStorage.getItem('niggusaveradio')); 
+         if(loadlist == "1"){
+            loadcheckbox = document.getElementsByName('q1');
+            loadcheckbox[1].checked = true;
+         } 
+         else if(loadlist == "2"){
+            loadcheckbox = document.getElementsByName('q1');
+            loadcheckbox[2].checked = true;
+         } 
+         RadioCheck();
+      }
+       
+       
+       
+      function Save() {
+          var i = 0;
+          while( i<list.length ){
+             loadcheckbox = document.getElementById(list[i]);
+             if(loadcheckbox.checked == true){
+                  localStorage.setItem('niggusave'+list[i],JSON.stringify("true"));
+             }
+             else{
+                 loadlist = JSON.parse(localStorage.getItem('niggusave'+list[i]));
+                 if(loadlist == "true"){
+                    localStorage.removeItem('niggusave'+list[i]);
+                 }
+             }
+             i++;
+          }
+      }
+      
+      
+      function ConfirmAlert(){
+          var message = "保存データを削除しますか？";
+          if(confirm(message)){
+             Delete();
+          }
+      } 
+       
+      function Delete(){
+          var i = 0;
+          while( i<list.length ){
+             localStorage.removeItem('niggusave'+list[i]);
+             loadcheckbox = document.getElementById(list[i]);
+             if(loadcheckbox.checked == true){
+                  loadcheckbox.checked = false;
+             }
+             i++;
+          }
+          localStorage.removeItem('niggusavefavorite');
+          localStorage.removeItem('niggusaveradio');
+      } 
+       
+       
+      function FavoriteCheck() {
+         loadcheckbox = document.getElementById("favorite");
+         if(loadcheckbox.checked == true){
+            FavoriteOn(); 
+         }
+         else{
+            FavoriteOff();
+         }
+         SelectCheck();
+      } 
+    
+       
+      function FavoriteOn() {
+          var i = 0;
+          while( i<list.length ){
+             loadlist = JSON.parse(localStorage.getItem('niggusave'+list[i]));
+             if(loadlist == "true"){
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.remove("c-active-none");
+             }
+             else{
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.add("c-active-none");
+             }
+             i++;
+          }
+          localStorage.setItem('niggusavefavorite',JSON.stringify("true"));
+      }
+       
+      function FavoriteOff() {
+          var i = 0;
+          while( i<list.length ){
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.remove("c-active-none");
+             i++;
+          }
+          localStorage.removeItem('niggusavefavorite');
+      }
+        
+      
+      function SelectCheck() {
+         var select1check = document.getElementById("select1");
+         var select2check = document.getElementById("select4");
+         var select3check = document.getElementById("select3");
+         var i = 0;
+         while( i<list.length ){
+            loadcontent = document.getElementById("c-"+list[i]);
+            loadcontent.classList.remove("c-select-none");
+            loadcontent.classList.remove("c-select2-none");
+            loadcontent.classList.remove("c-select3-none");
+            i++;
+         }  
+         if(select1check.value != "none"){
+            var i = 0;
+            while( i<list.length ){
+               loadcontent = document.getElementById("c-"+list[i]);
+               if(loadcontent.textContent.indexOf(select1check.value) == -1 ){
+                  loadcontent.classList.add("c-select-none");
+               }
+               i++;
+            }
+         }
+         if(select2check.value != "" || select2check.value != null){
+            var i = 0;
+            while( i<list.length ){
+               loadcontent = document.getElementById("al-c-"+list[i]);
+               if(loadcontent.textContent.indexOf(select2check.value) == -1){
+                  loadcontent = document.getElementById("c-"+list[i]);
+                  loadcontent.classList.add("c-select2-none");       
+               }
+               i++
+            }
+         }
+         if(select3check.value != "none"){
+            var i = 0;
+            while( i<list.length ){
+               loadcontent = document.getElementById("al-c-"+list[i]);
+               if(loadcontent.classList != select3check.value){
+                   loadcontent = document.getElementById("c-"+list[i]);
+                   loadcontent.classList.add("c-select3-none");
+               }
+               i++;
+            }
+         }
+         RadioCheck();
+      } 
+       
+       
+      
+      function RadioCheck(){
+         RemoveIB();
+         var radiocheck = document.getElementsByName('q1'); 
+         var i = 0;
+         while(i<radiocheck.length){
+            if(radiocheck[i].checked == true){
+               radiocheck = radiocheck[i].value;
+            }
+            i++;
+         }
+         var element = document.getElementById("content");
+
+         if(radiocheck == "デフォルト"){
+             var i=0;
+             while(i<list.length){
+                var elementload = document.getElementById("c-"+ list[i]);
+                element.insertBefore(elementload,element.children[element.lastChild]);
+                i++;
+             }
+             localStorage.removeItem('niggusaveradio');
+             
+         } 
+         else if(radiocheck == "配信順"){
+             var i=0;
+             while(i<rh.length){
+                var elementload = document.getElementById("c-"+ rh[i]);
+                element.insertBefore(elementload,element.children[element.lastChild]);
+                i++;
+             }
+             localStorage.setItem('niggusaveradio',JSON.stringify('1'));
+         }
+         else if(radiocheck == "歌唱回数順"){
+             SCCheck();
+             localStorage.setItem('niggusaveradio',JSON.stringify('2'));
+         }
+      }  
+      
+       
+       
+      function SCCheck(){
+            var scchecklist = new Array();
+            var num,cnt,count=1,sp1,sp2;
+            var sclist = new Array({num,cnt});
+            var splitlist = new Array({sp1,sp2});
+            var i = 0 , l = 0; 
+            while( i<list.length ){
+               loadcontent = document.getElementById("c-"+list[i]);
+               if(loadcontent.classList.contains("c-select-none") || loadcontent.classList.contains("c-select2-none") || 
+                  loadcontent.classList.contains("c-select3-none") || loadcontent.classList.contains("c-select4-none") || 
+                  loadcontent.classList.contains("c-active-none")
+               ){
+                  //console.log("none");
+               }
+               else{
+                  scchecklist[l] = list[i];
+                  var splitlist2 = loadcontent.id.split("-");
+                  splitlist[l] = {sp1:splitlist2[1],sp2:splitlist2[2]}
+                  l++;
+               }
+               i++;
+            }
+          
+            var i = 0 , l = 1 , f = 0;
+            while( l<splitlist.length ){
+                if(splitlist[i].sp1 == splitlist[l].sp1){
+                   count++;
+                }
+                else{
+                   sclist[f] = {num:splitlist[i].sp1 , cnt:count}
+                   f++;
+                   count = 1;
+                }
+                i++;
+                l++;
+            }
+            sclist[f] = {num:splitlist[i].sp1 , cnt:count}
+            sclist.sort((a, b) => b.cnt - a.cnt);
+          
+            var sc = new Array();
+            var l=0 , f=0;
+            while( l<sclist.length ){
+                i = 0;
+                while( i<scchecklist.length ){
+                    loadcontent = document.getElementById("c-"+scchecklist[i]);
+                    if(loadcontent.classList.contains(sclist[l].num)){
+                        sc[f] = scchecklist[i];
+                        f++;
+                    }
+                    i++;
+                }
+                l++;
+            }
+          
+          
+             var i=0;
+             var element = document.getElementById("content");
+             while(i<sc.length){
+                var elementload = document.getElementById("c-"+ sc[i]);
+                element.insertBefore(elementload,element.children[element.lastChild]);
+                i++;
+             }
+          
+          RemoveIB();
+          var eleFirst;
+          var i=0;
+          while(i<list.length){
+              eleFirst = document.getElementById("c-"+list[i]).classList.remove("NoClass");
+              i++;
+          }
+          
+          var iblist = new Array({num,cnt});
+          var i=0 , l=1 , f=0;
+          iblist[f] = {num:sclist[i].num , cnt:sclist[i].cnt}
+          f++;
+          while(l<sclist.length){
+              if(sclist[i].cnt > sclist[l].cnt){
+                 iblist[f] = {num:sclist[l].num , cnt:sclist[l].cnt}
+                 f++; 
+              }
+              i++;
+              l++;
+          }
+
+          
+          i=0;
+          while(i<scchecklist.length){
+              eleFirst = document.getElementById("c-"+scchecklist[i]).classList.add("NoClass");
+              i++;
+          }
+          
+          
+          f=0;
+          while(f<iblist.length){
+             var newElement = document.createElement("div");
+             newElement.classList.add("kaisuu");
+             var newElement2 = document.createElement("kaisuu-text");
+             newElement.appendChild(newElement2);
+             var newContent = document.createTextNode(iblist[f].cnt+"回"); 
+             newElement2.appendChild(newContent);
+
+              var i=0;
+              while(i<list.length){
+                  loadcontent = document.getElementById("c-"+list[i]);
+                  if(loadcontent.classList.contains("NoClass") && loadcontent.classList.contains(iblist[f].num) ){
+                     var ele = loadcontent;
+                     break;
+                  }
+                  else{
+                     i++;  
+                  }
+              }
+             
+             var parentElement = document.getElementsByClassName("content")[0];
+             parentElement.insertBefore(newElement, ele);
+             f++;
+          }
+        }
+     
+          
+      
+       
+      function RemoveIB(){
+             var removecontent = document.getElementsByClassName("kaisuu");
+             if (0 < removecontent.length) {
+                while (removecontent.length) {
+                   removecontent.item(0).remove()
+                }
+             }
+      };  
+       
+       
+       
+       
+       
+      function scrolltop(){
+         window.scroll({top: 0, behavior: 'smooth'});
+      };  
+       
+      function scrollunder(){
+         var element = document.documentElement;
+         var bottom = element.scrollHeight - element.clientHeight;
+         window.scrollTo({top: bottom, left: 0, behavior: 'smooth'});
+      };   
+       
+       
+       
+      function OpenWindow(url) {
+         window.open(url,"blank","width=800,height=720,left=900,top=100");
+      } 
+       
+       
+       
+       
+   </script>
+    
+
+
+    
+</body>
+    
+    
+    
+    
+    
+</html>
